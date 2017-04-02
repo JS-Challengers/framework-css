@@ -1,0 +1,31 @@
+/**
+ * Put here any css rules that you want to use in your test files
+ */
+html, body{
+    width: 100%;
+}
+.simple-container {
+    margin: auto;
+    width: 1024px;
+}
+
+.scol-3{
+    justify-content: space-around;
+    width: 29%;
+    float: left;
+    margin: 0px 20px;
+}
+
+.simple-row{
+    width: 100%;
+    margin: 0px 10px;
+    clear: both;
+}
+
+.show-container{
+    height: 50px;
+}
+
+.t-center {
+    text-align: center;
+}
