@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing waves</title>
+    <link rel="stylesheet" href="../../dist/css/material-boot.css">
+    <link rel="stylesheet" href="../css/commons.css">
+    <script src="../js/jquery-3.2.0.min.js"></script>
+    <script src="../../dist/js/material-boot.js"></script>
+    <style>
+        .wave-test{
+            height: 10px;
+            width: 150px;
+            padding: 30px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="wave-test red-1 t-center wave w-indigo">
+        I am a wave
+    </div>
+    <script>
+        $(function(){
+            jQuery(".wave").jkWavesEffect();
+        });
+    </script>
+</body>
+</html>

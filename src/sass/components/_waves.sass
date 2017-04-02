@@ -1,0 +1,15 @@
+.wave
+  overflow: hidden
+  position: relative
+.ripple
+  position : absolute
+  border-radius : 50%
+  width : 20px
+  height : 20px
+  background-color : white
+  animation : ripple-animation 1s
+  opacity : 0.4
+@keyframes ripple-animation
+  100%
+    transform : scale(100)
+    opacity : 0
