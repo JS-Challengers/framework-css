@@ -1,0 +1,74 @@
+
+$margin: margin !default
+
+@for $i from 1 through 8
+  .#{margin}-#{$i}
+    margin: 1em + $i 1em + $i 1em + $i 1em + $i
+
+.btn-normal
+  width: 6em
+  height: 2.7em
+  color: #FFF
+  background-color: rgba(0, 0, 0, 0.3)
+  border-radius: 2px
+  font-weight: bold
+  padding: 10px
+  overflow: hidden
+  position: relative
+
+.btn-primary
+  width: 6em
+  height: 2.7em
+  border: #106CC8
+  color: #FFF
+  background-color: #106CC8
+  border-radius: 2px
+  font-weight: bold
+  padding: 10px
+  overflow: hidden
+  position: relative
+
+.btn-small
+  width: 4.7em
+  height: 3em
+  padding: 5px
+
+$font-size: font !default
+
+@for $i from 0 through 9
+  .#{font-size}-#{$i}
+    font-size: 1em + $i
+
+.primary-hover
+  &:hover
+    background-color: #0159A2
+    border: 2px solid #0159A2
+
+.normal-hover
+  &:hover
+    background-color: rgba(0, 0, 0, 0.4)
+    border: 2px solid rgba(0, 0, 0, 0.3)
+
+$bor-rad: border !default
+
+@for $i from 1 through 50
+  .#{bor-rad}-#{$i}
+    border-radius: 2px + $i
+
+.cursor
+  cursor: pointer
+
+$space-letter: space !default
+
+@for $i from 0 through 4
+  .#{space-letter}-#{$i}
+    letter-spacing: 0.02em + $i
+
+$box-shadow: shadow !default
+
+@for $i from 0 through 9
+  .#{box-shadow}-#{$i}
+    box-shadow: 0px + $i 2px + $i 5px + $i 0px + $i rgba(0, 0, 0, 0.4), 0px + $i 2px + $i 10px + $i 0px + $i rgba(0, 0, 0, 0.6)
+
+.upper
+  text-transform: uppercase
