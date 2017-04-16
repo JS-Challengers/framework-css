@@ -29,3 +29,10 @@ html, body{
 .t-center {
     text-align: center;
 }
+
+.wave-test{
+    height: 10px;
+    width: 150px;
+    padding: 30px;
+    border: 1px solid black;
+}

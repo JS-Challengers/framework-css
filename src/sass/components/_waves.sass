@@ -1,15 +1,18 @@
 .wave
   overflow: hidden
   position: relative
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC)
+
 .ripple
-  position : absolute
-  border-radius : 50%
-  width : 20px
-  height : 20px
-  background-color : white
-  animation : ripple-animation 1s
-  opacity : 0.4
+  position: absolute
+  border-radius: 50%
+  width: 20px
+  height: 20px
+  animation: ripple-animation 0.55s
+  opacity: 0.2
+  transform: scale(0)
+
 @keyframes ripple-animation
   100%
-    transform : scale(100)
-    opacity : 0
+    transform: scale(7)
+    opacity: 0

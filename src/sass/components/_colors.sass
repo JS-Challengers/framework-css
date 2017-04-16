@@ -21,6 +21,12 @@ $other-scale : ("black" : #000000, "white" : #FFFFFF)
 
 $colors : ("rojos" : $red-scale, "rosados" : $pink-scale, "Purpuras" : $purple-scale, "Morado oscuro" : $d-purple-scale, "Indigo" : $indigo-scale, "Azul" : $blue-scale, "Azul claro" : $l-blue-scale, "Cyan" : $cyan-scale, "Verde azul" : $teal-scale, "Verde" : $green-scale, "Verde claro" : $l-green-scale, "Lima" : $lime-scale, "Amarillo" : $yellow-scale, "Ámbar" : $amber-scale, "Naranja" : $orange-scale, "Naranja oscuro" : $d-orange-scale, "Café" : $brown-scale, "Marrón" : $grey-scale, "Azul gris" : $blue-gray-scale, "Otros" : $other-scale)
 
+// Here you can apply default colors to other components
+.wave .ripple
+  background-color: map_get($grey-scale, grey-6)
+
+// Create the colors scale, you can attach other classes to the color definition
+
 @each $color-name, $color-scale in $colors
   @each $scale-name, $scale-value in $color-scale
     .#{$scale-name}, .w-#{$scale-name} .ripple
